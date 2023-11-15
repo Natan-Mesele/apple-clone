@@ -66,11 +66,11 @@ const Menu = styled.div`
 `
 const Search = styled(SearchIcon)`
   color: #fafafa;
-
 `
 const MenuSearch = styled.div`
   cursor: pointer;
-  font-size: 2px;
+  display: flex;
+  align-items: center;
 `
 
 const Bag = styled(LocalMallIcon)`
@@ -78,6 +78,7 @@ const Bag = styled(LocalMallIcon)`
 `
 const MenuBag = styled.div`
   cursor: pointer;
-  font-size: 2px;
+  display: flex;
+  align-items: center;
   padding: 0 20px;
 `

@@ -7,7 +7,7 @@ function Header() {
   return (
     <Container>
         <a>
-            <img src="img/logo.png" />
+            <img src="img/Apple_logo.svg" />
         </a>
         <Menu>
             <a href="#">Store</a>
@@ -36,6 +36,7 @@ function Header() {
 export default Header
 
 const Container = styled.div`
+  position: fixed;
   height: 50px;
   background: #0a0a0a;
   display: flex;
@@ -49,7 +50,7 @@ const Container = styled.div`
     object-fit: contain;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 15px;
     cursor: pointer;
   }
 `
@@ -61,7 +62,7 @@ const Menu = styled.div`
     color: #fafafa;
     text-decoration: none;
     font-size: 0.8rem;
-    padding: 0 20px;
+    padding: 0 17px;
   }
 `
 const Search = styled(SearchIcon)`

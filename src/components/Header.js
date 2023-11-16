@@ -38,7 +38,7 @@ export default Header
 const Container = styled.div`
   position: fixed;
   height: 50px;
-  background: #0a0a0a;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,14 +59,14 @@ const Menu = styled.div`
     align-items: center;
 
   a {
-    color: #fafafa;
+    color: gray;
     text-decoration: none;
     font-size: 0.8rem;
     padding: 0 17px;
   }
 `
 const Search = styled(SearchIcon)`
-  color: #fafafa;
+  color: gray;
 `
 const MenuSearch = styled.div`
   cursor: pointer;
@@ -75,7 +75,7 @@ const MenuSearch = styled.div`
 `
 
 const Bag = styled(LocalMallIcon)`
-  color: #fafafa;
+  color: gray;
 `
 const MenuBag = styled.div`
   cursor: pointer;

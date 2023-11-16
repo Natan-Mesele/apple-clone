@@ -1,21 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section() {
+function Section({ title, backgroundImg, LeftBtnText, RightBtnText }) {
   return (
-    <Container>
+    <Container bgImage={backgroundImg}>
+      <Hero>
+        <HeroImg>
+          <Img src="img/hero_logo_apple_watch_series_9__eg5xcrxghuaa_small.png" />
+        </HeroImg>
         <Item>
-          Smarter.Brighter.Mightier.
+          {title}
         </Item>
         <ButtonGroup>
           <LeftButton>
-            Learn more
+            {LeftBtnText}
             
           </LeftButton>
           <RightButton>
-            Buy
+            {RightBtnText}
           </RightButton>
         </ButtonGroup>
+      </Hero> 
     </Container>
   )
 }
@@ -34,20 +39,41 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    border-bottom: 12px solid white;
+    background-image: ${props => `URL("/img/${props.bgImage}")`}
+`
+const Hero = styled.div`
+  Margin-top: -14rem;
+`
+const HeroImg = styled.div`
+  display: flex;
+  justify-content: center;
+`
+const Img = styled.img`
+  width: 150px;
+  object-fit: cover;
 `
 const Item = styled.div`
   color: white;
   font-size: 1.6rem;
-  margin-top: -14rem;
 `
 const ButtonGroup = styled.div`
   color: white;
   display: flex;
   justify-content: center;
-  
+  gap: 2rem;
+  margin-top: 1rem;
 `
 const LeftButton = styled.div`
+  color: #39A7FF;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `
-const RightButton = styled.div`
+const RightButton = styled(LeftButton)`
+
 `
+

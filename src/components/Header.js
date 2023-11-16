@@ -36,7 +36,6 @@ function Header() {
 export default Header
 
 const Container = styled.div`
-  position: fixed;
   height: 50px;
   background: white;
   display: flex;
@@ -50,7 +49,7 @@ const Container = styled.div`
     object-fit: contain;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 20px;
     cursor: pointer;
   }
 `
@@ -62,7 +61,7 @@ const Menu = styled.div`
     color: gray;
     text-decoration: none;
     font-size: 0.8rem;
-    padding: 0 17px;
+    padding: 0 20px;
   }
 `
 const Search = styled(SearchIcon)`

@@ -14,7 +14,6 @@ function Section({ title, backgroundImg, LeftBtnText, RightBtnText }) {
         <ButtonGroup>
           <LeftButton>
             {LeftBtnText}
-            
           </LeftButton>
           <RightButton>
             {RightBtnText}
@@ -43,11 +42,13 @@ const Container = styled.div`
     background-image: ${props => `URL("/img/${props.bgImage}")`}
 `
 const Hero = styled.div`
-  Margin-top: -14rem;
+  Margin-top: -16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 const HeroImg = styled.div`
-  display: flex;
-  justify-content: center;
+  
 `
 const Img = styled.img`
   width: 150px;

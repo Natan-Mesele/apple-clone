@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Section from './Section'
+import Product from './Product'
 
 function Home() {
   return (
@@ -23,6 +24,11 @@ function Home() {
           LeftBtnText="Learn more"
           RightBtnText="Buy"
         />
+        <Content>
+          <Product />
+          <Product />
+        </Content>
+        
     </Container>
   )
 }
@@ -31,4 +37,8 @@ export default Home
 
 const Container = styled.div`
 
+`
+const Content = styled.div`
+  display: flex;
+  padding: 0 10px;
 `

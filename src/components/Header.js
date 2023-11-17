@@ -1,13 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import SearchIcon from '@material-ui/icons/Search';
-import LocalMallIcon from '@material-ui/icons/LocalMall';
 
 function Header() {
   return (
     <Container>
         <a>
-            <img src="img/Apple_logo.svg" />
+            <img src="img/apple _black.svg" />
         </a>
         <Menu>
             <a href="#">Store</a>
@@ -23,10 +21,14 @@ function Header() {
             <a href="#">Support</a>
         </Menu>
         <MenuSearch >
-          <Search />
+          <a>
+              <img src="img/search.svg" />
+          </a>
         </MenuSearch>
         <MenuBag>
-          <Bag />
+          <a>
+              <img src="img/shopping-bag.svg" />
+          </a>
         </MenuBag>
         
     </Container>
@@ -56,25 +58,25 @@ const Container = styled.div`
 const Menu = styled.div`
     display: flex;
     align-items: center;
+    
 
   a {
     color: gray;
     text-decoration: none;
-    font-size: 0.8rem;
-    padding: 0 20px;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+    font-weight: 500;
   }
-`
-const Search = styled(SearchIcon)`
-  color: gray;
 `
 const MenuSearch = styled.div`
   cursor: pointer;
   display: flex;
-  align-items: center;
-`
+  align-items: center; 
+  margin-left: 1rem; 
 
-const Bag = styled(LocalMallIcon)`
-  color: gray;
+  img {
+    color: black;
+  }
 `
 const MenuBag = styled.div`
   cursor: pointer;
